@@ -9,15 +9,20 @@ namespace StaticExercise
 
         static void Main()
         {
-
-            Console.WriteLine("32 degrees F equals this Celsius value... ");
-            Console.WriteLine(TempConverter.FahrenheitToCelsius(32));
+            Console.WriteLine("Enter a Fahrenheit temperature you wish to convert to Celsius...");
+            var fCon = int.Parse(Console.ReadLine());
+            Console.WriteLine($"The Celsius conversion for {fCon} Fahrenheit equals...");
+            Console.WriteLine(TempConverter.FahrenheitToCelsius(fCon));
+           
 
             Console.WriteLine();
 
-            Console.WriteLine("100 degrees C equals this Fahrenheit value...");
-            Console.WriteLine(TempConverter.CelsiusToFahrenheit(100));
-       
+            Console.WriteLine("Enter a Celsius temperature you wish to convert to Fahrenheit...");
+            var cCon = int.Parse(Console.ReadLine());
+            Console.WriteLine($"The Celsius conversion for {cCon} Celsius equals...");
+            Console.WriteLine(TempConverter.CelsiusToFahrenheit(cCon));
+           
+
         }
     }
 }
